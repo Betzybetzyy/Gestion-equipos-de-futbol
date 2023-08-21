@@ -1,0 +1,30 @@
+﻿<Window x:Class="EVA1.Contenedor.ActualizarEquipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EVA1.Contenedor"
+        mc:Ignorable="d"
+        Title="ActualizarEquipo" Height="450" Width="800">
+    <Grid>
+        <Label Content="Actualizar equipo" HorizontalAlignment="Left" Margin="267,41,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Grid>
+            <Label x:Name="lblNombre" Content="Nombre Equipo" HorizontalAlignment="Left" Margin="101,104,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblJugadores" Content="Cantidad Jugadores" HorizontalAlignment="Left" Margin="101,144,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblDt" Content="Nombre DT" HorizontalAlignment="Left" Margin="101,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.534,1.235"/>
+            <Label x:Name="lblTipoEquipo" Content="Tipo Equipo" HorizontalAlignment="Left" Margin="101,224,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblCapitan" Content="Capitán Equipo&#x9;" HorizontalAlignment="Left" Margin="101,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.617"/>
+            <Label x:Name="lblSub21" Content="¿Tiene Sub 21?&#x9;" HorizontalAlignment="Left" Margin="101,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.965"/>
+
+            <Grid>
+                <TextBox x:Name="txtNombreEquipo" HorizontalAlignment="Left" Margin="246,104,0,0" VerticalAlignment="Top" Width="170" Height="26" OpacityMask="Black" Background="#FFEFEFEF" BorderBrush="Black"/>
+                <TextBox x:Name="txtJugadores" HorizontalAlignment="Left" Margin="246,144,0,0" VerticalAlignment="Top" Width="170" Height="26" OpacityMask="Black" Background="#FFEFEFEF" BorderBrush="Black" PreviewTextInput="CheckTextInput"/>
+                <TextBox x:Name="txtNombreDt" HorizontalAlignment="Left" Margin="246,184,0,0" VerticalAlignment="Top" Width="170" Height="26" OpacityMask="Black" Background="#FFEFEFEF" BorderBrush="Black"/>
+                <TextBox x:Name="txtTipoEquipo" HorizontalAlignment="Left" Margin="246,224,0,0" VerticalAlignment="Top" Width="170" Height="26" OpacityMask="Black" Background="#FFEFEFEF" BorderBrush="Black"/>
+                <TextBox x:Name="txtCapitan" HorizontalAlignment="Left" Margin="246,264,0,0" VerticalAlignment="Top" Width="170" Height="26" OpacityMask="Black" Background="#FFEFEFEF" BorderBrush="Black"/>
+                <CheckBox x:Name="checkSub21" Content="" HorizontalAlignment="Left" Margin="321,304,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btnActualizarEquipo" Content="Actualizar equipo" HorizontalAlignment="Left" Margin="281,360,0,0" VerticalAlignment="Top" FontSize="14" Click="btnActualizarEquipo_Click"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
